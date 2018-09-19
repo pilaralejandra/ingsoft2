@@ -18,7 +18,7 @@ $filas = mysqli_num_rows($resultado);
 
 if($filas > 0){
     echo $filas;
-    header("Location: inicio.html");
+    header("Location: ../inicio.html");
 }else{
     echo "Error en la autenticacion... intente de nuevo <a href='index.html'> regresar</a>";
     
