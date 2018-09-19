@@ -5,6 +5,6 @@ window.onload = function () {
 
 function Cargar()
 {
-    $('#datagrid').load('lista_empleados.php');    
+    $('#datagrid').load('php/lista_empleados.php');    
 }
 
