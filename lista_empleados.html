@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="estilos_empleados.css">
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="ajax.js"></script>
 
   </head>
 
@@ -21,19 +23,21 @@
       <nav class="menu">
         <ul>
           <li> <a href="menuempleados.html">Agregar empleado</a> </li>
-          <li> <a href="lista_empleados.hml">Lista de empleados</a></li>
+          <li> <a href="lista_empleados.html">Lista de empleados</a></li>
           <li> <a href="inicio.html">Menú principal</a> </li>
         </ul>
       </nav>
       </div>
     </header>
 
-<div class="agregar_empleado">
-    <form method="POST" action="lista_empleados.php">
-         
-    </form>
-</div> 
+ <div id="consultar">
+    <section class="widget">
+        <h4 class="widgettitulo">Listado de Empleados</h4>
+        <div class="datagrid" id="datagrid">
 
+        </div>  
+    </section>
+    </div>
    
   </body>
 </html>
