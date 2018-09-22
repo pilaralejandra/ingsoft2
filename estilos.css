@@ -1,12 +1,18 @@
-*{
+/* *{
   padding:0;
   margin: 0;
   -webkit-box-sizing:border-box;
   -moz-box-sizing:border-box;
   box-sizing:border;
-}
+} */
 
-.contenedor{
+nav a
+{
+  background-color: #009EA9;
+  font-style: bold;
+  color: white;
+}
+/* .contenedor{
   width:95%;
   max-width:1000px;
   margin:auto;
@@ -59,4 +65,4 @@ header nav ul li a:hover{
 
 body{
   font-family: Georgia, "Times New Roman",Times, serif;
-}
+} */
