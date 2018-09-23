@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CLIENTES</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos_clientes.css">
+
+
+  </head>
+
+  <body background="fondo.jpg">
+
+    <header>
+      <div class="contenedor">
+        <div class="logo">
+          <center>
+        <img src="images/empleados.jpg" width="700" height="400"/>
+      </center>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li> <a href="clientes.html">Agregar Cliente</a> </li>
+          <li> <a href="lista_cliente.html">Lista de Clientes</a></li>
+          <li> <a href="inicio.html">Menú principal</a> </li>
+        </ul>
+      </nav>
+      </div>
+    </header>
+
+<div class="agregar_clientes">
+    <form method="POST" action="php/agregar_clientes.php">
+      <div>
+      <h1>Agregar Cliente Nuevo</h1><br>
+      <label>RFC: </label><input type="text" name="rfc" required autocomplete="off"><br><br>
+      <label>Nombre: </label><input type="text" name="nombre" required autocomplete="off"><br><br>
+      <label>Direccion: </label><input type="text" name="direccion" required autocomplete="off"><br><br>
+      <label>Telefono: </label><input type="text" name="telefono" required autocomplete="off"><br><br>
+
+      <input type="submit" name="guardar" value="guardar">
+    </div>      
+    </form>
+</div> 
+
+   
+  </body>
+</html>
