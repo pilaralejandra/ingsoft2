@@ -11,6 +11,21 @@ nav a
   background-color: #009EA9;
   font-style: bold;
   color: white;
+  border: 1px solid white;
+}
+.tname
+{
+  color: #414143;
+}
+.icono
+{
+  color: #FAD956;
+}
+
+img
+{
+  width: 600px;
+  height: 350px;
 }
 /* .contenedor{
   width:95%;
