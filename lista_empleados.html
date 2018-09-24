@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="estilos_empleados.css">
 
     <script src="js/jquery.min.js"></script>
-    <script src="ajax.js"></script>
+    <script src="buscar_empleados.js"></script>
 
   </head>
 
@@ -30,15 +30,19 @@
       </div>
     </header>
 
-<div class="buscar">
 
-  
+<div class="contenedor">
+  <div class="form center">
+    <form action="" method="post" name="search_form" id="search_form">
+      <input type="text" name="consulta" id="caja_busqueda">
+    </form>    
+  </div>
 </div>
 
  <div id="consultar">
     <section class="widget">
         <h4 class="widgettitulo">Listado de Empleados</h4>
-        <div class="datagrid" id="datagrid">
+        <div class="datagrid" id="datos">
 
         </div>  
     </section>
