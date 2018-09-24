@@ -26,6 +26,9 @@ nav a
   color: #FAD956;
 }
 
+a:hover .icono {
+  color: white;
+}
 img
 {
   width: 600px;
