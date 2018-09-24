@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <title>CLIENTES</title>
     <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="estilos_empleados.css">
+    <link rel="stylesheet" href="estilos_clientes.css">
 
     <script src="js/jquery.min.js"></script>
-    <script src="ajax_cliente.js"></script>
+    <script src="buscar_clientes.js"></script>
 
   </head>
 
@@ -17,12 +17,12 @@
       <div class="contenedor">
         <div class="logo">
           <center>
-        <img src="images/empleados.jpg" width="700" height="400"/>
+        <img src="images/client.jpg" width="700" height="400"/>
       </center>
       </div>
       <nav class="menu">
         <ul>
-          <li> <a href="cliente.html">Agregar cliente</a> </li>
+          <li> <a href="clientes.html">Agregar cliente</a> </li>
           <li> <a href="lista_cliente.html">Lista de clientes</a></li>
           <li> <a href="inicio.html">Menú principal</a> </li>
         </ul>
@@ -30,15 +30,18 @@
       </div>
     </header>
 
-<div class="buscar">
-
-  
+<div class="container">
+  <div class="form center">
+    <form action="" method="post" name="search_form" id="search_form">
+      <input type="text" name="consulta" id="caja_busqueda">
+    </form>    
+  </div>
 </div>
 
  <div id="consultar">
     <section class="widget">
         <h4 class="widgettitulo">Listado de Clientes</h4>
-        <div class="datagrid" id="datagrid">
+        <div class="datagrid" id="datos">
 
         </div>  
     </section>

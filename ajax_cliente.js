@@ -1,11 +1,9 @@
 window.onload = function () {
-    Cargar();    
+    Cargar();
 }
 
 
 function Cargar()
 {
-    $('#datagrid').load('php/lista_clientes.php');    
+    $('#datagrid').load('php/lista_clientes.php');
 }
-
-
