@@ -17,6 +17,10 @@ nav a
 {
   color: #414143;
 }
+.iname
+{
+  color: #55b590;
+}
 .icono
 {
   color: #FAD956;
@@ -26,6 +30,32 @@ img
 {
   width: 600px;
   height: 350px;
+}
+
+form
+{
+  border: 3px solid #F8A602;
+}
+
+.submit-button
+{
+  background-color: #F8A602;
+  color: white;
+}
+
+.act-color
+{
+  background-color: #F8A602;
+}
+.act-color:hover
+{
+  color: white;
+}
+
+.nav-act:hover
+{
+  color: white;
+  background-color: #FAD956;
 }
 /* .contenedor{
   width:95%;
