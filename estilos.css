@@ -13,11 +13,11 @@ nav a
   color: white;
   border: 1px solid white;
 }
-.tname
+.title
 {
   color: #414143;
 }
-.iname
+.icon-color
 {
   color: #55b590;
 }
@@ -43,11 +43,11 @@ form
   color: white;
 }
 
-.act-color
+.active-color
 {
   background-color: #F8A602;
 }
-.act-color:hover
+.active-color:hover
 {
   color: white;
 }
