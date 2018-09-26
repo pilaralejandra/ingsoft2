@@ -60,6 +60,17 @@ form
   color: white;
   background-color: #FAD956;
 }
+
+th
+{
+  background-color: #F2B544;
+  color: white;
+}
+
+div span
+{
+  background-color: #F8A602;
+}
 /* .contenedor{
   width:95%;
   max-width:1000px;
