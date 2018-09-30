@@ -63,3 +63,9 @@ div span
 {
   background-color: #F8A602;
 }
+
+.bg-img
+{
+  height: 200px;
+  background-image: url("images/money-background.jpg");
+}
