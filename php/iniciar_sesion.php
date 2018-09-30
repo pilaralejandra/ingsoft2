@@ -21,7 +21,7 @@ if($filas > 0){
     header("Location: ../inicio.html");
 }else{
     echo "Error en la autenticacion... intente de nuevo <a href='index.html'> regresar</a>";
-    
+
 }
 
 ?>

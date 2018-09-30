@@ -4,28 +4,34 @@
     <meta charset="utf-8">
     <title>INVERSIONES</title>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="main.js"></script>
+    <!-- <script src="main.js"></script> -->
   </head>
-  <body background="images/fondo.jpg">
-    <center><img src="images/inver.png" width="700" height="400"/>  </center>
-    <header>
-      <div class="contenedor">
-        <div class="logo">
-          <center>
-      </center>
-      </div>
-      <nav class="menu">
-        <ul>
-          <li> <a href="menutipodeinversiones.html">Tipo de inversiones</a> </li>
-          <li> <a href="clientes.html">Clientes</a></li>
-          <li> <a href="menuinversion.html">Inversión</a> </li>
-          <li> <a href="menupagointereses.html">Pago de intereses</a> </li>
-          <li> <a href="menuempleados.html">Empleados</a> </li>
-        </ul>
-      </nav>
+  <body>
+    <header class="container">
+      <div class="row">
+        <h1 class="font-weight-bold text-center col-md-12 mt-5 title">Inversiones <i class="fab fa-pagelines icono"></i></h1>
       </div>
     </header>
+
+    <div class="container mt-4 d-none d-md-block">
+      <div class="row">
+          <img src="images/principal-img.jpg" class="mx-auto d-block" alt="Imagen Principal">
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <nav class="nav nav-pills flex-column flex-sm-row">
+        <a class="flex-md-fill text-sm-center nav-link col-md-4 nav-act" href="#"><i class="fab fa-pagelines icono"></i></a> </li>
+        <a class="flex-md-fill text-sm-center nav-link col-md-4 nav-act" href="menutipodeinversiones.html">Tipo de inversiones <i class="fas fa-columns"></i></a> </li>
+        <a class="flex-md-fill text-sm-center nav-link col-md-4 nav-act" href="clientes.html">Clientes <i class="fas fa-users"></i></a></li>
+        <a class="flex-md-fill text-sm-center nav-link col-md-4 nav-act" href="menuinversion.html">Inversión <i class="fas fa-coins"></i></a> </li>
+        <a class="flex-md-fill text-sm-center nav-link col-md-4 nav-act" href="menupagointereses.html">Pago de intereses <i class="fas fa-money-bill"></i></a> </li>
+        <a class="flex-md-fill text-sm-center nav-link col-md-4 nav-act" href="menuempleados.html">Empleados <i class="far fa-address-card"></i></a> </li>
+      </ul>
+    </div>
 
   </body>
 </html>

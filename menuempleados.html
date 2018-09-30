@@ -3,46 +3,63 @@
   <head>
     <meta charset="utf-8">
     <title>EMPLEADOS</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="estilos_empleados.css">
-
-
+    <!-- <link rel="stylesheet" href="estilos_empleados.css"> -->
   </head>
 
-  <body background="images/fondo.jpg">
+  <body>
 
-    <header>
-      <div class="contenedor">
-        <div class="logo">
-          <center>
-        <img src="images/empleados.jpg" width="700" height="400"/>
-      </center>
-      </div>
-      <nav class="menu">
-        <ul>
-          <li> <a href="menuempleados.html">Agregar empleado</a> </li>
-          <li> <a href="lista_empleados.html">Lista de empleados</a></li>
-          <li> <a href="inicio.html">Menú principal</a> </li>
-        </ul>
-      </nav>
+    <header class="container">
+      <div class="row">
+        <h1 class="font-weight-bold text-left col-md-12 mt-5 title">Empleados <i class="far fa-address-card icon-color"></i></h1>
       </div>
     </header>
 
-<div class="agregar_empleado">
-    <form method="POST" action="php/agregar_empleados.php">
-      <div>
-      <h1>Agregar Empleado Nuevo</h1><br>
-      <label>NSS: </label><input type="text" name="nss" required autocomplete="off"><br><br>
-      <label>Nombre: </label><input type="text" name="nombre" required autocomplete="off"><br><br>
-      <label>Direccion: </label><input type="text" name="direccion" required autocomplete="off"><br><br>
-      <label>Telefono: </label><input type="text" name="telefono" required autocomplete="off"><br><br>
-      <label>User: </label><input type="text" name="user" required autocomplete="off"><br><br>
-      <label>Pass: </label><input type="text" name="pass" required autocomplete="off"><br><br>
-      <input type="submit" name="guardar" value="guardar">
-    </div>      
-    </form>
-</div> 
+    <div class="container my-5">
+      <nav class="menu nav nav-pills flex-column flex-sm-row">
 
-   
+        <a class="flex-md-fill text-sm-center nav-link col-md-4 active-color" href="menuempleados.html">Agregar empleado <i class="fas fa-user-plus"></i></a> </li>
+        <a class="flex-md-fill text-sm-center nav-link col-md-4 nav-act" href="lista_empleados.html">Lista de empleados <i class="far fa-list-alt"></i></a></li>
+        <a class="flex-md-fill text-sm-center nav-link col-md-4 nav-act" href="inicio.html">Menú principal <i class="fab fa-pagelines icono"></i></a> </li>
+
+      </nav>
+    </div>
+
+    <div class="container pb-5">
+      <div class="row">
+        <form class="col-sm-12 col-md-6 offset-md-3 p-4 " action="agregar_empleados.php" method="POST" class="col-sm-12 col-md-6 offset-md-3 p-4">
+          <h2 class="tname">Datos del Empleado</h2>
+            <div class="form-group">
+              <label for="nss">NSS</label>
+              <input type="text" class="form-control" id="nss" name="nss" placeholder="NSS">
+            </div>
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+            </div>
+            <div class="form-group">
+              <label for="direccion">Dirección</label>
+              <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Dirección">
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Teléfono">
+            </div>
+            <div class="form-group">
+              <label for="user">User</label>
+              <input type="tel" class="form-control" id="user" name="user" placeholder="User">
+            </div>
+            <div class="form-group">
+              <label for="pass">Password</label>
+              <input type="password" class="form-control" id="pass" name="pass" placeholder="Password">
+            </div>
+            <button type="submit" class="btn submit-button float-right" name="guardar" value="guardar">Guardar</button>
+        </form>
+      </div>
+    </div>
+
+
   </body>
 </html>

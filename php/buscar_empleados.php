@@ -1,4 +1,10 @@
-<?php 
+<html>
+<head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+</html>
+<?php
 require 'conexion.php';
 $conexion = conecta();
 
@@ -13,15 +19,16 @@ if(isset($_POST['consulta'])){
 $resultado = $conexion->query($query);
 
 if($resultado->num_rows > 0){
-	$salida.="<table class='tabla_datos'>
+	$salida.="<table class='tabla_datos table'>
+				<caption>Listado de Empleados</caption>
 				<thead>
 				<tr>
-				<td>nss</td>
-				<td>nombre</td>
-				<td>direccion</td>
-				<td>telefono</td>
-				<td>user</td>
-				<td>pass</td>
+				<th>nss</th>
+				<th>nombre</th>
+				<th>direccion</th>
+				<th>telefono</th>
+				<th>user</th>
+				<th>pass</th>
 				</tr>
 				</thead>
 				<tbody>";

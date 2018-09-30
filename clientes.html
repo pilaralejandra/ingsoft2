@@ -3,45 +3,56 @@
   <head>
     <meta charset="utf-8">
     <title>CLIENTES</title>
+    <!-- <link rel="stylesheet" href="estilos_clientes.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="estilos_clientes.css">
-
-
   </head>
 
-  <body background="images/fondo.jpg">
+  <body>
 
-    <header>
-      <div class="contenedor">
-        <div class="logo">
-          <center>
-        <img src="images/empleados.jpg" width="700" height="400"/>
-      </center>
-      </div>
-      <nav class="menu">
-        <ul>
-          <li> <a href="clientes.html">Agregar Cliente</a> </li>
-          <li> <a href="lista_cliente.html">Lista de Clientes</a></li>
-          <li> <a href="inicio.html">Menú principal</a> </li>
-        </ul>
-      </nav>
+    <header class="container">
+      <div class="row">
+        <h1 class="font-weight-bold text-left col-md-12 mt-5 title">Clientes <i class="fas fa-users icon-color"></i></h1>
       </div>
     </header>
 
-<div class="agregar_clientes">
-    <form method="POST" action="php/agregar_clientes.php">
-      <div>
-      <h1>Agregar Cliente Nuevo</h1><br>
-      <label>RFC: </label><input type="text" name="rfc" required autocomplete="off"><br><br>
-      <label>Nombre: </label><input type="text" name="nombre" required autocomplete="off"><br><br>
-      <label>Direccion: </label><input type="text" name="direccion" required autocomplete="off"><br><br>
-      <label>Telefono: </label><input type="text" name="telefono" required autocomplete="off"><br><br>
+    <div class="container my-5">
+      <nav class="menu nav nav-pills flex-column flex-sm-row">
 
-      <input type="submit" name="guardar" value="guardar">
-    </div>      
-    </form>
-</div> 
+        <a class="flex-md-fill text-sm-center nav-link col-md-4 active-color" href="clientes.html">Agregar cliente <i class="fas fa-user-plus"></i></a> </li>
+        <a class="flex-md-fill text-sm-center nav-link col-md-4 nav-act" href="lista_cliente.html">Lista de clientes <i class="far fa-list-alt"></i></a></li>
+        <a class="flex-md-fill text-sm-center nav-link col-md-4 nav-act" href="inicio.html">Menú principal <i class="fab fa-pagelines icono"></i></a> </li>
 
-   
+      </nav>
+    </div>
+
+    <div class="container pb-5">
+      <div class="row">
+
+        <form method="POST" action="php/agregar_clientes.php" class="col-sm-12 col-md-6 offset-md-3 p-4 ">
+          <h2 class="tname">Datos del Cliente</h2>
+            <div class="form-group">
+              <label for="rfc">RFC</label>
+              <input type="text" class="form-control" id="rfc" name="rfc" placeholder="RFC">
+            </div>
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" class="form-control" id="rfc" name="nombre" placeholder="Nombre">
+            </div>
+            <div class="form-group">
+              <label for="direccion">Direccion</label>
+              <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Direccion">
+            </div>
+            <div class="form-group">
+              <label for="telefono">Telefono</label>
+              <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Telefono">
+            </div>
+          <button type="submit" class="btn submit-button float-right" name="guardar" value="guardar">Guardar</button>
+        </form>
+
+      </div>
+    </div>
+
   </body>
 </html>
