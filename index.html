@@ -6,33 +6,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="x-ua-compatible" content="ie-edge">
 	<link rel="stylesheet" href="css/bootstrap.css">
-
-
-	<style type="text/css">
-		.borde{
-			background-color: yellow;
-			height: 100px;
-		}
-	</style>
-
+	<link rel="stylesheet" href="css/vendor/fontawesome/css/all.css">
+	<link rel="stylesheet" href="estilos.css">
 </head>
 
-<body background="images/fondo.jpg">
+<body>
 <!-- ***************************inicio de index *********************-->
 
-	<div class="container">
+	<div class="container-fluid bg-img d-none d-md-block"></div>
+	<header class="container">
 		<div class="row">
-			<div class="col borde">
-			<h1>Ingreso a Inversiones</h1>
-			</div>
+			<h1 class="font-weight-bold text-center col-md-12 mt-5 title">Ingreso a Inversiones <i class="fab fa-pagelines icono"></i></h1>
 		</div>
-	</div>
- 	<div>
-
-	</div>
+	</header>
 
 
-	<div class="contenedor">
+
+
+	<!-- <div class="contenedor">
 		<form action="php/iniciar_sesion.php" method="POST">
 			  <div class="form-group">
 			    <input type="text" class="form-control" id="text" placeholder="user" name="user">
@@ -42,6 +33,27 @@
 			  </div>
 			  <button type="submit" class="btn btn-outline-primary">ENTRAR</button>
 		</form>
+	</div> -->
+
+	<div class="container my-3" id="login">
+		<div class="row">
+			<form action="php/iniciar_sesion.php" method="post" class="form-login panel panel-primary col-sm-12 col-md-6 offset-md-3 p-4">
+				<div class="panel-heading text-center">
+					<h2>LOGIN</h2>
+				</div>
+				<div class="form-group">
+
+					<h4>Usuario: </h4>
+					<input type="text"class="form-control" id="text" name="user" placeholder="Usuario"><br>
+					<h4>Contraseña: </h4>
+					<input type="password" class="form-control" id="pwd" name="pass" placeholder="Contraseña">
+
+				</div>
+				<button type="submit" class="btn submit-button float-right">Ingresar</button>
+				<!-- <button class="btn btn-warning">Registrar</button> -->
+
+			</form>
+		</div>
 	</div>
 
 <script src="js/jquery-3.3.1.slim.min.js"></script>
