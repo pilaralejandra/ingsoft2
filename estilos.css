@@ -1,0 +1,65 @@
+nav a
+{
+  background-color: #009EA9;
+  font-style: bold;
+  color: white;
+  border: 1px solid white;
+}
+.title
+{
+  color: #414143;
+}
+.icon-color
+{
+  color: #55b590;
+}
+.icono
+{
+  color: #FAD956;
+}
+
+a:hover .icono {
+  color: white;
+}
+img
+{
+  width: 600px;
+  height: 350px;
+}
+
+form
+{
+  border: 3px solid #F8A602;
+}
+
+.submit-button
+{
+  background-color: #F8A602;
+  color: white;
+}
+
+.active-color
+{
+  background-color: #F8A602;
+}
+.active-color:hover
+{
+  color: white;
+}
+
+.nav-act:hover
+{
+  color: white;
+  background-color: #FAD956;
+}
+
+th
+{
+  background-color: #F2B544;
+  color: white;
+}
+
+div span
+{
+  background-color: #F8A602;
+}
