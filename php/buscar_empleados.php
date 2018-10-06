@@ -45,7 +45,7 @@ if($resultado->num_rows > 0){
 					  <td>".$fila['puesto']."</td>
 					  <td>".$fila['user']."</td>
 					  <td>".$fila['pass']."</td>
-					  <td>"."<i class='fas fa-pen-alt'><a href='#'>editar</a></i> <i class='fas fa-trash'> <a href='#'>eliminar</a></i>"."</td>
+					  <td>"."<i class='fas fa-pen-alt'>"."<a href='php/editar_empleados.php?nss=".$fila['nss']."'>editar</a></i> <i class='fas fa-trash'> <a href='#'>eliminar</a></i>"."</td>
 					  </tr>";
 		}
 
