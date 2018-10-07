@@ -29,6 +29,7 @@ if($resultado->num_rows > 0){
 				<th>telefono</th>
 				<th>user</th>
 				<th>pass</th>
+        <th>acciones</th>
 				</tr>
 				</thead>
 				<tbody>";
@@ -41,6 +42,7 @@ if($resultado->num_rows > 0){
 					  <td>".$fila['telefono']."</td>
 					  <td>".$fila['user']."</td>
 					  <td>".$fila['pass']."</td>
+            <td>"."<i class='fas fa-pen-alt'><a href='#'>editar</a></i> <i class='fas fa-trash'> <a href='#'>eliminar</a></i>"."</td>
 					  </tr>";
 		}
 
