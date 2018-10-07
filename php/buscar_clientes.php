@@ -41,7 +41,7 @@ if($resultado->num_rows > 0){
 					  <td>".$fila['nombre']."</td>
 					  <td>".$fila['direccion']."</td>
 					  <td>".$fila['telefono']."</td>
-					  <td>"."<i class='fas fa-pen-alt'>"." <a href='php/editar_clientes.php?RFC=".$fila['RFC']."'>editar</a></i> <i  class='fas fa-trash'> <a href='#'>eliminar</a></i>"."</td>
+					  <td>"."<i class='fas fa-pen-alt'>"." <a href='php/editar_clientes.php?RFC=".$fila['RFC']."'>editar</a></i> <i  class='fas fa-trash'> <a href='php/eliminar_proceso_clientes.php?RFC=".$fila['RFC']."'>eliminar</a></i>"."</td>
 					  </tr>";
 		}
 
