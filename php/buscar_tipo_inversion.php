@@ -39,7 +39,7 @@ if($resultado->num_rows > 0){
 					  <td>".$fila['categoria']."</td>
 					  <td>".$fila['porcentaje']."</td>
 					  <td>".$fila['tasa_pago']."</td>
-					  <td>"."<i class='fas fa-pen-alt'>"."<a href='php/editar_empleados.php?id=".$fila['id_tipo_inv']."'>editar</a></i> <i class='fas fa-trash'>"."<a href='php/eliminar_proceso_empleado.php?id=".$fila['id_tipo_inv']."'>eliminar</a></i>"."</td>
+					  <td>"."<i class='fas fa-pen-alt'>"."<a href='php/editar_tipo_inversion.php?id=".$fila['id_tipo_inv']."'>editar</a></i> <i class='fas fa-trash'>"."<a href='php/eliminar_proceso_tipo_inversion.php?id=".$fila['id_tipo_inv']."'>eliminar</a></i>"."</td>
 					  </tr>";
 		}
 
