@@ -8,13 +8,21 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <!-- <script src="main.js"></script> -->
+
+    <?php  require_once('php/iniciar_sesion.php');?>
   </head>
   <body>
+    
     <header class="container">
-      <div class="row">
-        <h1 class="font-weight-bold text-center col-md-12 mt-5 title">Inversiones <i class="fab fa-pagelines icono"></i>
+      <div class="row ">
+        <h1 class="font-weight-bold text-center col-md-12 mt-5 title">Inversiones <i class="fab fa-pagelines icono"></i></h1>
+ 
         <a href="php/cerrar_sesion.php" class="btn btn-primary btn-lg"><i class="fas fa-power-off salir"></i></a>
-        </h1>
+                <?php include('navfixed.php');?>
+    <?php
+      $position=$_SESSION['SESSION_USUARIO'];
+      if($position=='admin' || $position='ejecutivo') {
+?> 
       </div>
     </header>
 
@@ -30,11 +38,13 @@
         <a class="flex-md-fill text-sm-center nav-link col-md-4 nav-act" href="#"><i class="fab fa-pagelines icono"></i></a> </li>
         <a class="flex-md-fill text-sm-center nav-link col-md-4 nav-act" href="tipo_inversion.html">Tipo de inversiones <i class="fas fa-columns"></i></a> </li>
         <a class="flex-md-fill text-sm-center nav-link col-md-4 nav-act" href="clientes.html">Clientes <i class="fas fa-users"></i></a></li>
-        <a class="flex-md-fill text-sm-center nav-link col-md-4 nav-act" href="menuinversion.html">Inversión <i class="fas fa-coins"></i></a> </li>
+        <a class="flex-md-fill text-sm-center nav-link col-md-4 nav-act" href="inversion.html">Inversión <i class="fas fa-coins"></i></a> </li>
         <a class="flex-md-fill text-sm-center nav-link col-md-4 nav-act" href="menupagointereses.html">Pago de intereses <i class="fas fa-money-bill"></i></a> </li>
         <a class="flex-md-fill text-sm-center nav-link col-md-4 nav-act" href="menuempleados.html">Empleados <i class="far fa-address-card"></i></a> </li>
       </ul>
     </div>
-
+    <?php
+}
+?>
   </body>
 </html>

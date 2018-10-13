@@ -5,6 +5,20 @@ nav a
   color: white;
   border: 1px solid white;
 }
+
+.container-fluid a {
+  background-color: #fff;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+}
+
+.row{
+  align-items: center;
+}
 .title
 {
   color: #414143;

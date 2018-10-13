@@ -8,9 +8,9 @@ $NSS = $_POST['nss'];
 $nombre = $_POST['nombre'];
 $direccion = $_POST['direccion'];
 $telefono = $_POST['telefono'];
-$telefono = $_POST['puesto'];
-$telefono = $_POST['user'];
-$telefono = $_POST['pass'];
+$puesto = $_POST['puesto'];
+$user = $_POST['user'];
+$pass = $_POST['pass'];
 
 
 

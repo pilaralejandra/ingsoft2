@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>TIPO INVERSION</title>
+    <title>INVERSION</title>
     <!-- <link rel="stylesheet" href="estilos_clientes.css"> -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -13,15 +13,15 @@
 
     <header class="container">
       <div class="row">
-        <h1 class="font-weight-bold text-left col-md-12 mt-5 title">Tipo Inversion <i class="fas fa-users icon-color"></i></h1>
+        <h1 class="font-weight-bold text-left col-md-12 mt-5 title">Inversiones <i class="fas fa-users icon-color"></i></h1>
       </div>
     </header>
 
     <div class="container my-5">
       <nav class="menu nav nav-pills flex-column flex-sm-row">
 
-        <a class="flex-md-fill text-sm-center nav-link col-md-4 active-color" href="tipo_inversion.html">Agregar Tipo Inversion <i class="fas fa-user-plus"></i></a> </li>
-        <a class="flex-md-fill text-sm-center nav-link col-md-4 nav-act" href="lista_tipo_inversion.html">Lista de Tipo de Inversion <i class="far fa-list-alt"></i></a></li>
+        <a class="flex-md-fill text-sm-center nav-link col-md-4 active-color" href="tipo_inversion.html">Registrar Inversion Cliente <i class="fas fa-user-plus"></i></a> </li>
+        <a class="flex-md-fill text-sm-center nav-link col-md-4 nav-act" href="lista_tipo_inversion.html">Lista de Inversiones <i class="far fa-list-alt"></i></a></li>
         <a class="flex-md-fill text-sm-center nav-link col-md-4 nav-act" href="inicio.php">Menú principal <i class="fab fa-pagelines icono"></i></a> </li>
 
       </nav>
@@ -33,8 +33,8 @@
         <form method="POST" action="php/agregar_tipo_inversion.php" class="col-sm-12 col-md-6 offset-md-3 p-4 ">
           <h2 class="tname">Datos del Tipo de Inversion</h2>
             <div class="form-group">
-              <label for="id">ID</label>
-              <input type="text" class="form-control" id="id" name="id" placeholder="Id">
+              <label for="id">RFC Cliente</label>
+              <input type="text" class="form-control" id="id" name="rfcCliente" placeholder="Id">
             </div>
             <div class="form-group">
               <label for="nombre">Categoria</label>
