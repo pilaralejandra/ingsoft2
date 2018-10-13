@@ -11,6 +11,8 @@
     <script src="js/jquery.min.js"></script>
     <script src="buscar_empleados.js"></script>
 
+       <?php  require_once('php/iniciar_sesion.php');?>
+
   </head>
 
   <body>
@@ -18,15 +20,20 @@
     <header class="container">
       <div class="row">
         <h1 class="font-weight-bold text-left col-md-12 mt-5 title">Empleados <i class="far fa-address-card icon-color"></i></h1>
+         <?php include('navfixed.php');?>
+            <?php
+      $position=$_SESSION['SESSION_USUARIO'];
+      if($position=='admin' || $position='ejecutivo') {
+?> 
       </div>
     </header>
 
     <div class="container my-5">
       <nav class="menu nav nav-pills flex-column flex-sm-row">
 
-        <a class="flex-md-fill text-sm-center nav-link col-md-4 nav-act" href="menuempleados.html">Agregar empleado <i class="fas fa-user-plus"></i></a> </li>
-        <a class="flex-md-fill text-sm-center nav-link col-md-4 active-color" href="lista_empleados.html">Lista de empleados <i class="far fa-list-alt"></i></a></li>
-        <a class="flex-md-fill text-sm-center nav-link col-md-4 nav-act" href="inicio.html">Menú principal <i class="fab fa-pagelines icono"></i></a> </li>
+        <a class="flex-md-fill text-sm-center nav-link col-md-4 nav-act" href="menuempleados.php">Agregar empleado <i class="fas fa-user-plus"></i></a> </li>
+        <a class="flex-md-fill text-sm-center nav-link col-md-4 active-color" href="lista_empleados.php">Lista de empleados <i class="far fa-list-alt"></i></a></li>
+        <a class="flex-md-fill text-sm-center nav-link col-md-4 nav-act" href="inicio.php">Menú principal <i class="fab fa-pagelines icono"></i></a> </li>
 
       </nav>
     </div>
@@ -62,6 +69,8 @@
         </div>
     </section>
     </div> -->
-
+    <?php
+}
+?>
   </body>
 </html>
