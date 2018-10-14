@@ -63,3 +63,16 @@ div span
 {
   background-color: #F8A602;
 }
+
+.btn-salir
+{
+  background-color: white;
+  color: #F8A602;
+  border: 1px solid #F8A602;
+}
+
+.btn-salir:hover
+{
+  background-color: #F8A602;
+  color: white;
+}
