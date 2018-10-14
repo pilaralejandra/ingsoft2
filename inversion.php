@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos.css">
     <!-- <link rel="stylesheet" href="estilos_empleados.css"> -->
+      <?php  require_once('php/iniciar_sesion.php');?>
   </head>
 
   <body>
@@ -14,6 +15,12 @@
     <header class="container">
       <div class="row">
         <h1 class="font-weight-bold text-left col-md-12 mt-5 title">INVERSIONES <i class="far fa-address-card icon-color"></i></h1>
+        <?php include('navfixed.php');?>
+    <?php
+
+      $position=$_SESSION['SESSION_USUARIO'];
+      if($position=='admin' || $position='ejecutivo') {
+?> 
       </div>
     </header>
 
@@ -37,7 +44,7 @@
             </div>
             <div class="form-group">
               <label for="fecha">Fecha</label>
-              <input type="date" class="form-control" name="fecha" id="fecha" name="fecha">
+              <input type="date" class="form-control" name="fecha" id="fecha" name="fecha" value="<?php echo date('Y-m-d'); ?>" >
             </div>
             <div class="form-group">
               <label for="Plazo de inversion">Plazo de la inversion</label><br>
@@ -65,7 +72,9 @@
         </form>
       </div>
     </div>
-
+    <?php
+}
+?>
 
   </body>
 </html>
