@@ -2,9 +2,37 @@
 require 'conexion.php';
 $conexion = conecta();
 
-$user = $_POST['user'];
-$pass = $_POST['pass'];
+session_start();
 
+$errmsg_arr = array();
+
+$errflag = false;
+
+
+if (isset($_POST['iniciarSesion'])) {
+	# code...
+
+	$user = mysqli_real_escape_string($conexion,$_POST['user']);
+	$pass = mysqli_real_escape_string($conexion,$_POST['pass']);
+
+
+
+		if($user == ''){
+			$errmsg_arr[]='User missing';
+			$errflag = true;
+		}
+		if ($pass == '') {
+			$errmsg_arr[]='Pass missing';
+			$errflag = true;
+		}
+
+/*if ($errflag) {
+	$_SESSION['ERRMSG_ARR'] = $errmsg_arr;
+	session_write_close();
+	header("location: index.php");
+	exit();
+}
+*/
 
 
 
@@ -12,28 +40,39 @@ $pass = $_POST['pass'];
 $admin = "SELECT * FROM EMPLEADOS WHERE user = '$user' and pass = '$pass'and puesto = 'ADMIN'";
 $ejecutivo = "SELECT * FROM EMPLEADOS WHERE user = '$user' and pass = '$pass'and puesto = 'EJECUTIVO'";
 
+
 $resultado = mysqli_query($conexion, $admin);
 $filas = mysqli_num_rows($resultado);
 
 $res = mysqli_query($conexion, $ejecutivo);
 $filasEjecutivo = mysqli_num_rows($res);
 
-if($filas > 0 ){
-    session_start();
 
-    $_SESSION['user']="$user";
+
+if($resultado){
+	if($filas > 0 ){
     
-    header("Location: ../inicio.html");
+    	session_regenerate_id();
+		$member = mysqli_fetch_assoc($resultado);
+     	$_SESSION['SESSION_USUARIO'] = $member['puesto'];
+     	session_write_close();
+        header("Location: ../inicio.php");
 
     exit();
 }else if ($filasEjecutivo > 0) {
 	session_start();
 
-    $_SESSION['user']="$user";
+    	$_SESSION['user']=$user;
     
     header("Location: ../ejecutivo.html");
 }else {
-    echo "Error en la autenticacion... intente de nuevo <br><a href='../index.html'> regresar</a>";
+    echo "Error en la autenticacion... intente de nuevo <br><a href='../index.php'> regresar</a>";
+
+}
+}else{
+
+	die("consulta fallo...");
+}
 
 }
 

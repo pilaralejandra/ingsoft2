@@ -1,3 +1,8 @@
+<?php
+session_start();
+
+unset($_SESSION['SESSION_USUARIO']);
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,6 +11,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="x-ua-compatible" content="ie-edge">
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="js/bootstrap.min.js">
+	<link rel="stylesheet" href="js/jquery.min.js">
+	
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 
 	<style type="text/css">
@@ -55,6 +66,15 @@
 	</div>
 	<br>
 	<div class="contenedor login">
+		<?php 
+			if(isset($_SESSION['ERRMGS_ARR']) && is_array($_SESSION['ERRMGS_ARR']) && count($_SESSION['ERRMGS_ARR']) > 0){
+				foreach ($_SESSION['ERRMGS_ARR'] as $msg) {
+					# code...
+					echo "<div style='color: red text-align: center;'>",$msg,"</div>";
+				}
+				unset($_SESSION['ERRMGS_ARR']);
+			}
+		?>
 		<form action="php/iniciar_sesion.php" method="POST">
 			  	<div class="form-group">
 				  	<div class="row">
@@ -68,7 +88,7 @@
 			  <div class="form-group">
 			  	<input type="password" class="form-control" id="pwd" placeholder="pass" name="pass" required>
 			  </div>
-			  <button type="submit" class="btn btn-outline-primary">ENTRAR</button>
+			  <button type="submit" class="btn btn-outline-primary" name="iniciarSesion">ENTRAR</button>
 		</form>
 	</div>
 
