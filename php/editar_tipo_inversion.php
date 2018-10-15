@@ -30,7 +30,7 @@
       
 
  <form class="col-sm-12 col-md-6 offset-md-3 p-4 " action="editar_proceso_tipo_inversion.php?id=<?php echo $row['id_tipo_inv']; ?>" method="POST" class="col-sm-12 col-md-6 offset-md-3 p-4">
-          <h2 class="tname">Datos del Empleado</h2>
+          <h2 class="tname">Datos del Tipo de Inversion</h2>
             <div class="form-group">
               <label for="id">id</label>
               <input type="text" class="form-control" id="id" name="id_tipo_inv" placeholder="id" value="<?php echo $row['id_tipo_inv'];?>">

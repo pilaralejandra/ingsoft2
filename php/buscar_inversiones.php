@@ -45,7 +45,7 @@ if($resultado->num_rows > 0){
 					  <td>".$fila['nss_empleado']."</td>
 					  <td>".$fila['RFC_cliente']."</td>
 					  <td>".$fila['categoria']."</td>
-					  <td>"."<i class='fas fa-pen-alt'>"."<a href='php/editar_empleados.php?id=".$fila['id_inversion']."'>editar</a></i> <i class='fas fa-trash'>"."<a href='php/eliminar_proceso_empleado.php?id=".$fila['id_inversion']."'>eliminar</a></i>"."</td>
+					  <td>"."<i class='fas fa-pen-alt'>"."<a href='php/editar_inversion.php?id=".$fila['id_inversion']."'>editar</a></i> <i class='fas fa-trash'>"."<a href='php/eliminar_proceso_inversion.php?id=".$fila['id_inversion']."'>eliminar</a></i>"."</td>
 					  </tr>";
 		}
 

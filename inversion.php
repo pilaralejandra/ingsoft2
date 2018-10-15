@@ -20,7 +20,7 @@
 
       $position=$_SESSION['SESSION_USUARIO'];
       $nss=$_SESSION['SESSION_ID'];
-      if($position=='admin' || $position='ejecutivo') {
+      if($position=='admin') {
 ?> 
       </div>
     </header>
@@ -31,6 +31,19 @@
         <a class="flex-md-fill text-sm-center nav-link col-md-4 active-color" href="inversion.php">Agregar Inversion <i class="fas fa-user-plus"></i></a> </li>
         <a class="flex-md-fill text-sm-center nav-link col-md-4 nav-act" href="lista_inversion.php">Lista de Inversiones <i class="far fa-list-alt"></i></a></li>
         <a class="flex-md-fill text-sm-center nav-link col-md-4 nav-act" href="inicio.php">Menú principal <i class="fab fa-pagelines icono"></i></a> </li>
+
+      </nav>
+    </div>
+
+    <?php 
+}else{
+  ?>
+  <div class="container my-5">
+      <nav class="menu nav nav-pills flex-column flex-sm-row">
+
+        <a class="flex-md-fill text-sm-center nav-link col-md-4 active-color" href="tipo_inversion.php">Agregar Tipo Inversion <i class="fas fa-user-plus"></i></a> </li>
+        <a class="flex-md-fill text-sm-center nav-link col-md-4 nav-act" href="lista_tipo_inversion.php">Lista de Tipo de Inversion <i class="far fa-list-alt"></i></a></li>
+        <a class="flex-md-fill text-sm-center nav-link col-md-4 nav-act" href="ejecutivo.php">Menú principal <i class="fab fa-pagelines icono"></i></a> </li>
 
       </nav>
     </div>
