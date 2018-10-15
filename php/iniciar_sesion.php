@@ -73,6 +73,7 @@ if($resultado){
      	session_write_close();
     
     header("Location: ../ejecutivo.php");
+    exit();
 }else {
     echo "Error en la autenticacion... intente de nuevo <br><a href='../index.php'> regresar</a>";
 
