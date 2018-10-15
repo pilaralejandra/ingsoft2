@@ -22,7 +22,7 @@ z<!DOCTYPE html>
                 <?php include('navfixed.php');?>
     <?php
       $position=$_SESSION['SESSION_USUARIO'];
-      if($position=='admin') {
+      if($position='admin') {
 ?>
       </div>
     </header>
@@ -51,7 +51,9 @@ z<!DOCTYPE html>
       </nav>
     </div>
 
-
+    <?php
+}
+?>
 
 <!-- <div class="contenedor">
   <div class="form center">
@@ -83,8 +85,6 @@ z<!DOCTYPE html>
         </div>
     </section>
     </div> -->
-    <?php
-}
-?>
+
   </body>
 </html>

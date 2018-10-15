@@ -20,7 +20,7 @@
 
       $position=$_SESSION['SESSION_USUARIO'];
       $nss=$_SESSION['SESSION_ID'];
-      if($position=='admin') {
+      if($position='admin') {
 ?> 
       </div>
     </header>
@@ -47,6 +47,9 @@
 
       </nav>
     </div>
+    <?php
+}
+?>
 
     <div class="container pb-5">
       <div class="row">
@@ -87,9 +90,7 @@
         </form>
       </div>
     </div>
-    <?php
-}
-?>
+
 
   </body>
 </html>

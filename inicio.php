@@ -12,7 +12,7 @@
     <?php  require_once('php/iniciar_sesion.php');?>
   </head>
   <body>
-    
+
     <header class="container">
       <div class="row ">
         <h1 class="font-weight-bold text-center col-md-12 mt-5 title">Inversiones <i class="fab fa-pagelines icono"></i></h1>
@@ -21,7 +21,7 @@
                 <?php include('navfixed.php');?>
     <?php
       $position=$_SESSION['SESSION_USUARIO'];
-      if($position=='admin' || $position='ejecutivo') {
+      if($position='admin') {
 ?>
       </div>
     </header>
