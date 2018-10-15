@@ -28,8 +28,8 @@
     <div class="container my-5">
       <nav class="menu nav nav-pills flex-column flex-sm-row">
 
-        <a class="flex-md-fill text-sm-center nav-link col-md-4 active-color" href="menuempleados.html">Agregar Inversion <i class="fas fa-user-plus"></i></a> </li>
-        <a class="flex-md-fill text-sm-center nav-link col-md-4 nav-act" href="lista_empleados.html">Lista de Inversiones <i class="far fa-list-alt"></i></a></li>
+        <a class="flex-md-fill text-sm-center nav-link col-md-4 active-color" href="inversion.php">Agregar Inversion <i class="fas fa-user-plus"></i></a> </li>
+        <a class="flex-md-fill text-sm-center nav-link col-md-4 nav-act" href="lista_inversion.php">Lista de Inversiones <i class="far fa-list-alt"></i></a></li>
         <a class="flex-md-fill text-sm-center nav-link col-md-4 nav-act" href="inicio.php">Menú principal <i class="fab fa-pagelines icono"></i></a> </li>
 
       </nav>
@@ -41,7 +41,7 @@
           <h2 class="tname">Datos de las Inversiones</h2>
             <div class="form-group">
               <label for="rfcCliente">RFC de Cliente</label>
-              <input type="text" class="form-control" id="rfcCliente" name="rfcCliente" placeholder="RFC">
+              <input type="text" class="form-control" id="rfcCliente" name="rfcCliente" placeholder="RFC" required>
             </div>
             <div class="form-group">
               <label for="fecha">Fecha</label>
@@ -58,7 +58,7 @@
             </div>
             <div class="form-group">
               <label for="importe">importe</label>
-              <input type="number" class="form-control" name="importe" min="1000" max="1000000" placeholder="$1,000.00">
+              <input type="number" class="form-control" name="importe" min="1000" max="1000000" placeholder="$1,000.00" required>
             </div>
              <div class="form-group">
               <label for="categoria">categoria</label>
