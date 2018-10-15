@@ -15,82 +15,43 @@ unset($_SESSION['SESSION_ID']);
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="js/bootstrap.min.js">
 	<link rel="stylesheet" href="js/jquery.min.js">
-	
+	<link rel="stylesheet" href="estilos.css">
+
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
-
-	<style type="text/css">
-		.borde{
-			background-color: #009EA9;
-			height: 100px;
-		}
-
-		.login{
-			width: 30%;
-			height: 50%;
-			margin: auto;
-
-		}
-
-		.btn-outline-primary {
-		    color: #007bff;
-		    background-color: transparent;
-		    background-image: none;
-		    border-color: #007bff;
-		    width: 100%;
-		}
-
-		.contenedor {
-			border: .5px solid #2D1FC7;
-			border-radius: 25px;
-			padding: 20px 20px 20px 20px;
-		}
-
-		.col h1{
-			color: gray;
-			font-family: oswald;
-		}
-	</style>
 
 </head>
 
 <body>
 <!-- ***************************inicio de index *********************-->
 
-	<div class="container">
-		<div class="row">
-			<div class="col borde">
-			
-			</div>
-		</div>
-	</div>
-	<br>
-	<div class="contenedor login">
-		<?php 
-			if(isset($_SESSION['ERRMGS_ARR']) && is_array($_SESSION['ERRMGS_ARR']) && count($_SESSION['ERRMGS_ARR']) > 0){
-				foreach ($_SESSION['ERRMGS_ARR'] as $msg) {
-					# code...
-					echo "<div style='color: red text-align: center;'>",$msg,"</div>";
+	<div class="container-fluid bg-img"></div>
+
+	<div class="container pt-5">
+		<h1 class="text-center pb-5">Ingreso a Inversiones <i class="fab fa-pagelines icono"></i></h1>
+		<div class="contenedor row login">
+			<?php
+				if(isset($_SESSION['ERRMGS_ARR']) && is_array($_SESSION['ERRMGS_ARR']) && count($_SESSION['ERRMGS_ARR']) > 0){
+					foreach ($_SESSION['ERRMGS_ARR'] as $msg) {
+						# code...
+						echo "<div style='color: red text-align: center;'>",$msg,"</div>";
+					}
+					unset($_SESSION['ERRMGS_ARR']);
 				}
-				unset($_SESSION['ERRMGS_ARR']);
-			}
-		?>
-		<form action="php/iniciar_sesion.php" method="POST">
-			  	<div class="form-group">
-				  	<div class="row">
-						<div class="col text-center">
-						<h1>Ingreso a Inversiones</h1>
-						</div>
-					</div>
-			    <input type="text" class="form-control" id="text" placeholder="user" name="user" required autocomplete="off">
-			  </div>
-			  <br>
+			?>
+			<form action="php/iniciar_sesion.php" method="POST" class="col-sm-12 col-md-6 offset-md-3 p-4">
+				<h2 class="tname">Iniciar sesión</h2>
+				<div class="form-group">
+					<label for="text">Username</label>
+					<input type="text" class="form-control" id="text" placeholder="username" name="user" required autocomplete="off">
+				</div>
 			  <div class="form-group">
-			  	<input type="password" class="form-control" id="pwd" placeholder="pass" name="pass" required>
+					<label for="text">Password</label>
+			  	<input type="password" class="form-control" id="pwd" placeholder="password" name="pass" required>
 			  </div>
-			  <button type="submit" class="btn btn-outline-primary" name="iniciarSesion">ENTRAR</button>
-		</form>
+				<button type="submit" class="btn submit-button float-right" name="iniciarSesion">ENTRAR</button>
+			</form>
+		</div>
 	</div>
 
 <script src="js/jquery-3.3.1.slim.min.js"></script>

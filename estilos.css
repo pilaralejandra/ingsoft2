@@ -90,3 +90,11 @@ div span
   background-color: #F8A602;
   color: white;
 }
+
+.bg-img
+{
+  background-color: purple;
+  background-image: url("images/money-background.jpg");
+  height: 150px;
+
+}
