@@ -54,7 +54,10 @@ if($resultado){
     
     	session_regenerate_id();
 		$member = mysqli_fetch_assoc($resultado);
+		
+		$_SESSION['SESSION_ID'] = $member['nss'];
      	$_SESSION['SESSION_USUARIO'] = $member['puesto'];
+
      	session_write_close();
         header("Location: ../inicio.php");
 

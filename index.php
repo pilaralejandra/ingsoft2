@@ -2,6 +2,7 @@
 session_start();
 
 unset($_SESSION['SESSION_USUARIO']);
+unset($_SESSION['SESSION_ID']);
 ?>
 <!DOCTYPE html>
 <html>

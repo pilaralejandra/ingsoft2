@@ -19,6 +19,7 @@
     <?php
 
       $position=$_SESSION['SESSION_USUARIO'];
+      $nss=$_SESSION['SESSION_ID'];
       if($position=='admin' || $position='ejecutivo') {
 ?> 
       </div>
@@ -64,6 +65,7 @@
               <select class="form-control" name="categoria">
                 <option value="Oro">Oro</option>
                 <option value="Plata">Plata</option>
+                <option value="Cobre">Cobre</option>
                 <option value="Cetes">Cetes</option>
                 <option value="Escrituras">Escrituras</option>
             </select>
