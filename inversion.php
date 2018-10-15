@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>INVERSIONES</title>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/vendor/fontawesome/css/all.css">
     <link rel="stylesheet" href="estilos.css">
     <!-- <link rel="stylesheet" href="estilos_empleados.css"> -->
       <?php  require_once('php/iniciar_sesion.php');?>
@@ -21,7 +21,7 @@
       $position=$_SESSION['SESSION_USUARIO'];
       $nss=$_SESSION['SESSION_ID'];
       if($position='admin') {
-?> 
+?>
       </div>
     </header>
 
@@ -35,7 +35,7 @@
       </nav>
     </div>
 
-    <?php 
+    <?php
 }else{
   ?>
   <div class="container my-5">
@@ -94,4 +94,3 @@
 
   </body>
 </html>
-

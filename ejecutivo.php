@@ -5,7 +5,7 @@
     <title>INVERSIONES</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/vendor/fontawesome/css/all.css">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <!-- <script src="main.js"></script> -->
 
