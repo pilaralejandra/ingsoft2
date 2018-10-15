@@ -54,17 +54,25 @@ if($resultado){
     
     	session_regenerate_id();
 		$member = mysqli_fetch_assoc($resultado);
+		
+		$_SESSION['SESSION_ID'] = $member['nss'];
      	$_SESSION['SESSION_USUARIO'] = $member['puesto'];
+
      	session_write_close();
         header("Location: ../inicio.php");
 
     exit();
 }else if ($filasEjecutivo > 0) {
-	session_start();
 
-    	$_SESSION['user']=$user;
+		session_regenerate_id();
+		$member = mysqli_fetch_assoc($res);
+		
+		$_SESSION['SESSION_ID'] = $member['nss'];
+     	$_SESSION['SESSION_USUARIO'] = $member['puesto'];
+
+     	session_write_close();
     
-    header("Location: ../ejecutivo.html");
+    header("Location: ../ejecutivo.php");
 }else {
     echo "Error en la autenticacion... intente de nuevo <br><a href='../index.php'> regresar</a>";
 

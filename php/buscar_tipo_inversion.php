@@ -21,7 +21,7 @@ $resultado = $conexion->query($query);
 
 if($resultado->num_rows > 0){
 	$salida.="<table class='tabla_datos table'>
-				<caption align=top>Listado de Empleados</caption>
+				<caption align=top>Listado de Tipo de Inversion</caption>
 				<thead>
 				<tr>
 				<th>id</th>

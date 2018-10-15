@@ -1,5 +1,6 @@
 <?php 
-require 'conexion.php';
+//require 'conexion.php';
+require 'iniciar_sesion.php';
 $conexion = conecta();
 
 $rfcCliente = $_POST['rfcCliente'];
@@ -9,8 +10,12 @@ $importe = $_POST['importe'];
 $categoria = $_POST['categoria'];
 
 
+$nss = "SELECT nss FROM empleados where nss = '$_SESSION[SESSION_ID]'";
+$res=mysqli_query($conexion, $nss);
+$resultados = mysqli_fetch_array($res);
+$return = $resultados['nss']; 
 
-$consulta="INSERT INTO inversion (id_inversion, fecha_reg, dias, importe, nss_empleado,RFC_cliente, categoria)VALUES('$fecha', '$dias', '$importe','$rfcCliente','$categoria')";
+$consulta="INSERT INTO inversion (fecha_reg, dias, importe, nss_empleado,RFC_cliente, categoria)VALUES('$fecha', '$dias', '$importe','$return', '$rfcCliente','$categoria')";
 if (mysqli_query($conexion, $consulta)) {
       echo "New record created successfully";
 } else {

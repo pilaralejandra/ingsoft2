@@ -1,4 +1,4 @@
-z<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -22,35 +22,20 @@ z<!DOCTYPE html>
                 <?php include('navfixed.php');?>
     <?php
       $position=$_SESSION['SESSION_USUARIO'];
-      if($position=='admin') {
-?>
+      if($position=='admin' || $position='ejecutivo') {
+?> 
       </div>
     </header>
 
     <div class="container my-5">
       <nav class="menu nav nav-pills flex-column flex-sm-row">
 
-
-        <a class="flex-md-fill text-sm-center nav-link col-md-4 nav-act" href="tipo_inversion.php">Agregar Tipo Inversion <i class="fas fa-user-plus"></i></a> </li>
-        <a class="flex-md-fill text-sm-center nav-link col-md-4 active-color" href="lista_tipo_inversion.php">Lista de Tipo de Inversion <i class="far fa-list-alt"></i></a></li>
-        <a class="flex-md-fill text-sm-center nav-link col-md-4 nav-act" href="inicio.php">Menú principal <i class="fab fa-pagelines icono"></i></a> </li>
-
-
-      </nav>
-    </div>
-<?php
-}else{
-	?>
-	<div class="container my-5">
-      <nav class="menu nav nav-pills flex-column flex-sm-row">
-
         <a class="flex-md-fill text-sm-center nav-link col-md-4 active-color" href="tipo_inversion.php">Agregar Tipo Inversion <i class="fas fa-user-plus"></i></a> </li>
         <a class="flex-md-fill text-sm-center nav-link col-md-4 nav-act" href="lista_tipo_inversion.php">Lista de Tipo de Inversion <i class="far fa-list-alt"></i></a></li>
-        <a class="flex-md-fill text-sm-center nav-link col-md-4 nav-act" href="ejecutivo.php">Menú principal <i class="fab fa-pagelines icono"></i></a> </li>
+        <a class="flex-md-fill text-sm-center nav-link col-md-4 nav-act" href="inicio.php">Menú principal <i class="fab fa-pagelines icono"></i></a> </li>
 
       </nav>
     </div>
-
 
 
 <!-- <div class="contenedor">
