@@ -20,7 +20,7 @@
 
       $position=$_SESSION['SESSION_USUARIO'];
       $nss=$_SESSION['SESSION_ID'];
-      if($position='admin') {
+      if($position=='ADMIN') {
 ?> 
       </div>
     </header>

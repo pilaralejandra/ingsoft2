@@ -22,7 +22,7 @@
                 <?php include('navfixed.php');?>
     <?php
       $position=$_SESSION['SESSION_USUARIO'];
-      if($position='admin') {
+      if($position=='ADMIN') {
 ?> 
       </div>
     </header>

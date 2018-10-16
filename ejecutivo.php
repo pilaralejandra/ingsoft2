@@ -42,7 +42,7 @@
         <a class="flex-md-fill text-sm-center nav-link col-md-4 nav-act" href="menupagointereses.html">Pago de intereses <i class="fas fa-money-bill"></i></a> </li>
       </ul>
     </div>
-    <?php
+<?php
 }
 ?>
   </body>

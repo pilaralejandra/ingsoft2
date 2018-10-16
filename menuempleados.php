@@ -19,11 +19,13 @@
         <?php include('navfixed.php');?>
     <?php
       $position=$_SESSION['SESSION_USUARIO'];
-      if($position=='admin' || $position='ejecutivo') {
+      if($position=='admin' || $position=='ejecutivo') {
 ?> 
       </div>
     </header>
-
+    <?php
+}
+?>
     <div class="container my-5">
       <nav class="menu nav nav-pills flex-column flex-sm-row">
 
@@ -71,9 +73,7 @@
       </div>
     </div>
 
-    <?php
-}
-?>
+
   </body>
 </html>
 
