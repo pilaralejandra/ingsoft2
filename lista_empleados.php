@@ -23,8 +23,13 @@
          <?php include('navfixed.php');?>
             <?php
       $position=$_SESSION['SESSION_USUARIO'];
+<<<<<<< HEAD
       if($position=='admin' || $position='ejecutivo') {
 ?>
+=======
+      if($position=='ADMIN') {
+?> 
+>>>>>>> master
       </div>
     </header>
 

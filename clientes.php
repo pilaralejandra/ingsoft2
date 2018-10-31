@@ -20,8 +20,13 @@
         <?php include('navfixed.php');?>
     <?php
       $position=$_SESSION['SESSION_USUARIO'];
+<<<<<<< HEAD
       if($position='admin') {
 ?>
+=======
+      if($position=='ADMIN') {
+?> 
+>>>>>>> master
       </div>
     </header>
 
@@ -35,8 +40,13 @@
       </nav>
     </div>
 
+<<<<<<< HEAD
     <?php
 }else{
+=======
+    <?php 
+}else {
+>>>>>>> master
   ?>
   <div class="container my-5">
       <nav class="menu nav nav-pills flex-column flex-sm-row">
