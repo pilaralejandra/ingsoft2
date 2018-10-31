@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>EMPLEADOS</title>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/vendor/fontawesome/css/all.css">
     <link rel="stylesheet" href="estilos.css">
     <!-- <link rel="stylesheet" href="estilos_empleados.css"> -->
 
@@ -19,8 +19,13 @@
         <?php include('navfixed.php');?>
     <?php
       $position=$_SESSION['SESSION_USUARIO'];
+<<<<<<< HEAD
+      if($position=='admin' || $position='ejecutivo') {
+?>
+=======
       if($position=='admin' || $position=='ejecutivo') {
 ?> 
+>>>>>>> master
       </div>
     </header>
     <?php
@@ -42,23 +47,23 @@
           <h2 class="tname">Datos del Empleado</h2>
             <div class="form-group">
               <label for="nss">NSS</label>
-              <input type="text" class="form-control" id="nss" name="nss" placeholder="NSS">
+              <input type="text" class="form-control" id="nss" name="nss" placeholder="NSS" required>
             </div>
             <div class="form-group">
               <label for="nombre">Nombre</label>
-              <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+              <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
             </div>
             <div class="form-group">
               <label for="direccion">Dirección</label>
-              <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Dirección">
+              <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Dirección" required>
             </div>
             <div class="form-group">
               <label for="telefono">Teléfono</label>
-              <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Teléfono">
+              <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" required>
             </div>
              <div class="form-group">
-              <label for="puesto">puesto</label>
-              <input type="tel" class="form-control" id="puesto" name="puesto" placeholder="puesto">
+              <label for="puesto">Puesto</label>
+              <input type="tel" class="form-control" id="puesto" name="puesto" placeholder="Puesto" required>
             </div>
             <div class="form-group">
               <label for="user">User</label>
@@ -76,4 +81,3 @@
 
   </body>
 </html>
-

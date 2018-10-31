@@ -5,7 +5,7 @@
     <title>CLIENTES</title>
     <!-- <link rel="stylesheet" href="estilos_clientes.css"> -->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/vendor/fontawesome/css/all.css">
     <link rel="stylesheet" href="estilos.css">
 
     <?php  require_once('php/iniciar_sesion.php');?>
@@ -20,8 +20,13 @@
         <?php include('navfixed.php');?>
     <?php
       $position=$_SESSION['SESSION_USUARIO'];
+<<<<<<< HEAD
+      if($position='admin') {
+?>
+=======
       if($position=='ADMIN') {
 ?> 
+>>>>>>> master
       </div>
     </header>
 
@@ -35,8 +40,13 @@
       </nav>
     </div>
 
+<<<<<<< HEAD
+    <?php
+}else{
+=======
     <?php 
 }else {
+>>>>>>> master
   ?>
   <div class="container my-5">
       <nav class="menu nav nav-pills flex-column flex-sm-row">
@@ -59,19 +69,19 @@
           <h2 class="tname">Datos del Cliente</h2>
             <div class="form-group">
               <label for="rfc">RFC</label>
-              <input type="text" class="form-control" id="rfc" name="rfc" placeholder="RFC">
+              <input type="text" class="form-control" id="rfc" name="rfc" placeholder="RFC" required>
             </div>
             <div class="form-group">
               <label for="nombre">Nombre</label>
-              <input type="text" class="form-control" id="rfc" name="nombre" placeholder="Nombre">
+              <input type="text" class="form-control" id="rfc" name="nombre" placeholder="Nombre" required>
             </div>
             <div class="form-group">
               <label for="direccion">Direccion</label>
-              <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Direccion">
+              <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Direccion" required>
             </div>
             <div class="form-group">
               <label for="telefono">Telefono</label>
-              <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Telefono">
+              <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Telefono" required>
             </div>
           <button type="submit" class="btn submit-button float-right" name="guardar" value="guardar">Guardar</button>
         </form>

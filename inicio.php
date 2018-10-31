@@ -3,29 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>INVERSIONES</title>
-    <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/vendor/fontawesome/css/all.css">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <!-- <script src="main.js"></script> -->
 
     <?php  require_once('php/iniciar_sesion.php');?>
   </head>
   <body>
-    
-    <header class="container">
-      <div class="row ">
-        <h1 class="font-weight-bold text-center col-md-12 mt-5 title">Inversiones <i class="fab fa-pagelines icono"></i></h1>
- 
-        <a href="php/cerrar_sesion.php" class="btn btn-primary btn-lg"><i class="fas fa-power-off salir"></i></a>
+
+    <header class="container pt-3">
+      <div class="row">
+        <a href="php/cerrar_sesion.php" class="col-sm-3 offset-sm-9 btn btn-sesion">Cerrar sesión <i class="fas fa-power-off salir"></i></a>
                 <?php include('navfixed.php');?>
     <?php
       $position=$_SESSION['SESSION_USUARIO'];
       if($position='admin') {
-?> 
+?>
       </div>
     </header>
 
+    <div class="container">
+      <div class="row ">
+        <h1 class="font-weight-bold text-center col-md-12 mt-5 title">Inversiones <i class="fab fa-pagelines icono"></i></h1>
+      </div>
+    </div>
     <div class="container mt-4 d-none d-md-block">
       <div class="row">
           <img src="images/principal-img.jpg" class="mx-auto d-block" alt="Imagen Principal">

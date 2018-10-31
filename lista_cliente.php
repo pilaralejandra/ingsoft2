@@ -6,7 +6,7 @@
     <!-- <link rel="stylesheet" href="estilos_clientes.css"> -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/vendor/fontawesome/css/all.css">
 
     <script src="js/jquery.min.js"></script>
     <script src="buscar_clientes.js"></script>
@@ -23,8 +23,13 @@
         <?php include('navfixed.php');?>
     <?php
       $position=$_SESSION['SESSION_USUARIO'];
+<<<<<<< HEAD
+      if($position='admin') {
+?>
+=======
       if($position=='ADMIN') {
 ?> 
+>>>>>>> master
       </div>
     </header>
     <div class="container my-5">
@@ -37,7 +42,7 @@
       </nav>
     </div>
 
-<?php 
+<?php
 }else{
   ?>
   <div class="container my-5">

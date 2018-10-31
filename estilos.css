@@ -77,3 +77,37 @@ div span
 {
   background-color: #F8A602;
 }
+
+.btn-salir
+{
+  background-color: white;
+  color: #F8A602;
+  border: 1px solid #F8A602;
+}
+
+.btn-salir:hover
+{
+  background-color: #F8A602;
+  color: white;
+}
+
+.bg-img
+{
+  background-color: purple;
+  background-image: url("images/money-background.jpg");
+  height: 150px;
+
+}
+
+.btn-sesion
+{
+  background-color: white;
+  color: #F8A602;
+  border: 1px solid #F8A602;
+}
+
+.btn-sesion:hover
+{
+  background-color: #F8A602;
+  color: white;
+  border: 1px solid #F8A602;
